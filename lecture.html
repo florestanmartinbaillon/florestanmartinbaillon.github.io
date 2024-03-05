@@ -5,6 +5,16 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Références</title>
+		<script>
+			MathJax = {
+							tex: {
+											inlineMath: [['$', '$'], ['\\(', '\\)']]
+										}
+						};
+		</script>
+		<script id="MathJax-script" async
+			src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+		</script>
 		<style>
 * {
 	font-family: sans-serif;
@@ -61,10 +71,53 @@
 				<li>Dropbox</li>
 
 			</ul>
-			Programmation, python:
+			Visualisation, programmation, python:
 			<ul>
 				<li>Éditeur, environnement scientifique:
-				<a href="https://www.spyder-ide.org/" >Spyder</a>
+					<a href="https://www.spyder-ide.org/" >Spyder</a>
+				</li>
+				<li>
+					<a href="https://www.math.univ-toulouse.fr/~cheritat/wiki-draw/index.php/Mandelbrot_set#Bibliography" >
+						Un article</a> de Cheritat sur les algorithmes possibles pour tracer
+					des ensembles de Julia et l'ensemble de Mandelbrot.
+				</li>
+				<li>
+					<a href="https://complex-analysis.com/applets/p5js/julia-mandelbrot/" >
+						Visualisateur Mandelbrot/Julia interactif
+					</a>:
+					À gauche, le plan complexe des paramètres $c$, avec l'ensemble de Mandelbrot en noir.
+					À droite, l'ensemble de Julia du polynome $z^2+c$ correspondant.
+					
+				</li>
+				<li>
+					<a href="https://www.marksmath.org/visualization/julia2.html" >
+						Un autre Visualisateur Mandelbrot/Julia interactif
+					</a>:
+					<!-- idem, mais avec la possiblité de choisir le type d'algorithme utilisé -->
+					<!-- pour tracer le Julia (comparer les Julia obtenu avec les 2 algorithmes, -->
+					<!-- en fonction du paramètre). -->
+					Idem, mais permet de tracer les orbites dans le plan dynamique:
+					cela permet de visualiser les cycles attractifs 
+					des des composantes de Fatou bornées.
+					
+				</li>
+				<li>
+				<li>
+					<a href="https://sciencedemos.org.uk/julia.php" >
+						Visualisateur Julia
+					</a>:
+					Trace un Julia de $z^2+c$ étant donné le paramètre $c$.
+				</li>
+				</li>
+				<li>
+					<a href="https://www.youtube.com/watch?v=JttLtB0Gkdk" >La dynamique du lapin</a>,
+					une vidéo de Douady qui explique les notions dont on parle sur le cas de l'ensemble
+					de Julia que l'on appelle maintenant "le lapin de Douady".
+					C'est l'ensemble de Julia du polynome $f(z) = z^2+c$,
+					où $c$ est choisi tel que $0$ soit un point périodique (super attractif)
+					de période $3$
+					pour $f$, c'est à dire que $c$ satisfait
+					$(c^2+c)^2+c = 0$.
 				</li>
 			</ul>
 			</p>
