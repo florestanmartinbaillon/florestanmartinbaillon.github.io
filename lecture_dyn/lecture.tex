@@ -1,0 +1,115 @@
+\documentclass{article}
+\usepackage{mypackage}
+\begin{document}
+
+\section{Notions dynamiques}
+\label{sec:notions_dynamiques}
+
+On peut définir de manière très générales les notions
+dites "dynamiques" suivantes.
+Soit $ X $ un ensemble
+et $ f : X \to X $
+une application de $ X $ dans lui même.
+On dit parfois que
+$ (X,f) $
+est un système dynamique.
+
+\begin{itemize}
+        \item
+      	  Pour un entier $ n \in \mathbb{N} $,
+      	  \emph{l'itéré} $n$-ième de $ f $,
+      	  noté $ f^{n} $,
+      	  est la composition
+      	  $ f \circ \cdots \circ f $
+      	  (avec $ n $ termes).
+
+        \item Un \emph{point fixe}
+      	  de $ f $ 
+      	  est un point $ x \in X $
+      	  tel que $ f(x) = x $.
+        \item Un
+      	  \emph{point périodique}
+      	  de $ f $
+      	  est un point $ x \in X $
+      	  tel qu'il existe $ n $
+      	  tel que $ f^n(x) = x $.
+      	  Autrement dit,
+      	  c'est le point fixe
+      	  d'une certaine itéré
+      	  de $ f $.
+        \item Un sous-ensemble
+      	  $ Y \subset X $
+      	  est \emph{stable}
+      	  (ou invariant)
+      	  si $ f(Y) \subset Y $.
+\end{itemize}
+
+Soit
+$ (Y,g) $
+un autre système dynamique.
+On dit que
+$ f $ est
+\emph{conjuguée}
+à
+$ g $
+si il existe
+une bijection
+$ \varphi : X \to Y $
+telle que
+$ \varphi \circ f = g \circ \varphi $.
+Intuitivement,
+$ g $ est obtenu à partir de $ f $
+en faisant le "changement de variable"
+$ y = \varphi(x) $.
+Remarquer que c'est une relation d'équivalence.
+
+\section{Exercices}
+\label{sec:exercices}
+
+On trouvera ici quelques exercices
+"ouverts", c'est à dire sans réponse précise attendue,
+pour s'entrainer à manipuler les notions dynamiques.
+
+\textbf{Dynamique dans un ensemble fini.}
+Soit $ X $ un ensemble fini
+et $ f : X \to X $.
+Le \emph{graphe dynamique}
+de $ f $ est le graphe
+dont les sommets sont les points de $ X $
+et où l'on relie deux points
+$ x $ et $ y $ par une arrête si
+$ f(x) = y $.
+Décrire les différentes allures
+possibles pour un graphe dynamique
+sur un ensemble fini.
+
+\textbf{Polynômes de degré 1}.
+Soit $ f $ un polynôme complexe de degré 1,
+c'est à dire que
+$ f(x) = az + b $
+avec $ a $ et $ b $
+des complexes tels que
+$ a \neq 0 $.
+Étudier la dynamique
+de
+$ f : \mathbb{C} \to \mathbb{C} $
+(par exemple: ses points fixes, périodiques...).
+Comment cette dynamique varie avec le paramètre
+$ a $ ?
+Trouver une conjugaison
+(c'est à dire un changement de variable)
+qui réduise $ f $ à une forme la plus simple
+possible.
+
+\textbf{Degré 2.}
+Soit $ f(z) = z^{2} $.
+Étudier la dynamique
+de
+$ f : \mathbb{C} \to \mathbb{C} $.
+
+% \section{Résultats de dynamique complexe}
+% \label{sec:resultats_de_dynamique_complexe}
+
+
+
+\end{document}

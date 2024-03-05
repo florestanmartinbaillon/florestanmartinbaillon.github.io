@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+  MathJax = { 
+    tex: {
+		    inlineMath: [['\\(','\\)']]
+	} }
+</script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+<meta name="generator" content="plasTeX" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>: Notions dynamiques</title>
+<link rel="next" href="sec-exercices.html" title="Exercices" />
+<link rel="prev" href="index.html" title="" />
+<link rel="up" href="index.html" title="" />
+<link rel="stylesheet" href="styles/theme-white.css" />
+</head>
+
+<body>
+<header>
+<svg  id="toc-toggle" class="icon icon-list-numbered "><use xlink:href="symbol-defs.svg#icon-list-numbered"></use></svg>
+<h1 id="doc_title"><a href="index.html"></a></h1>
+</header>
+
+<div class="wrapper">
+<nav class="toc">
+<ul class="sub-toc-0">
+<li class=" active current">
+  <a href="sec-notions_dynamiques.html"><span class="toc_ref">1</span> <span class="toc_entry">Notions dynamiques</span></a>
+ </li>
+<li class="">
+  <a href="sec-exercices.html"><span class="toc_ref">2</span> <span class="toc_entry">Exercices</span></a>
+ </li>
+</ul>
+</nav>
+
+<div class="content">
+<div class="content-wrapper">
+
+
+<div class="main-text">
+<h1 id="sec:notions_dynamiques">1 Notions dynamiques</h1>
+
+<p>On peut définir de manière très générales les notions dites "dynamiques" suivantes. Soit \( X \) un ensemble et \( f : X \to X \) une application de \( X \) dans lui même. On dit parfois que \( (X,f) \) est un système dynamique. </p>
+<ul class="itemize">
+  <li><p>Pour un entier \( n \in \mathbb {N} \), <em>l’itéré</em> \(n\)-ième de \( f \), noté \( f^{n} \), est la composition \( f \circ \cdots \circ f \) (avec \( n \) termes). </p>
+</li>
+  <li><p>Un <em>point fixe</em> de \( f \) est un point \( x \in X \) tel que \( f(x) = x \). </p>
+</li>
+  <li><p>Un <em>point périodique</em> de \( f \) est un point \( x \in X \) tel qu’il existe \( n \) tel que \( f^n(x) = x \). Autrement dit, c’est le point fixe d’une certaine itéré de \( f \). </p>
+</li>
+  <li><p>Un sous-ensemble \( Y \subset X \) est <em>stable</em> (ou invariant) si \( f(Y) \subset Y \). </p>
+</li>
+</ul>
+<p>Soit \( (Y,g) \) un autre système dynamique. On dit que \( f \) est <em>conjuguée</em> à \( g \) si il existe une bijection \( \varphi : X \to Y \) telle que \( \varphi \circ f = g \circ \varphi \). Intuitivement, \( g \) est obtenu à partir de \( f \) en faisant le "changement de variable" \( y = \varphi (x) \). Remarquer que c’est une relation d’équivalence. </p>
+
+</div> <!--main-text -->
+</div> <!-- content-wrapper -->
+</div> <!-- content -->
+</div> <!-- wrapper -->
+
+<nav class="prev_up_next">
+  <a href="index.html" title=""><svg  class="icon icon-arrow-left "><use xlink:href="symbol-defs.svg#icon-arrow-left"></use></svg>
+</a>
+  <a href="index.html" title=""><svg  class="icon icon-arrow-up "><use xlink:href="symbol-defs.svg#icon-arrow-up"></use></svg>
+</a>
+  <a href="sec-exercices.html" title="Exercices"><svg  class="icon icon-arrow-right "><use xlink:href="symbol-defs.svg#icon-arrow-right"></use></svg>
+</a>
+</nav>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/plastex.js"></script>
+<script type="text/javascript" src="js/svgxuse.js"></script>
+</body>
+</html>
