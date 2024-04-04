@@ -1,0 +1,16 @@
+* {
+	font-family: sans-serif;
+}
+#content {
+	margin:auto;
+	max-width: 800px;
+}
+a {
+	text-decoration: none;
+}
+span {
+	/*font-size: 1.1em;
+	color:LightSlateGray;
+	font-weight: 550;*/
+	font-style: italic;
+}
