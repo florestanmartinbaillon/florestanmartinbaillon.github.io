@@ -12,10 +12,10 @@
 <meta name="generator" content="plasTeX" />
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>: Bibliographie</title>
-<link rel="next" href="sec-quartique.html" title="La quartique de Klein" />
-<link rel="prev" href="sub-semaine_4.html" title="Semaine 4" />
-<link rel="up" href="sec-guide_de_lecture.html" title="Guide de lecture" />
+<title>: Le groupe des homographies \(\mathrm{PGL}(3, \mathbb {C})\)</title>
+<link rel="next" href="sec-courbes_planes.html" title="Courbes planes" />
+<link rel="prev" href="sub-psl2f7.html" title="Le groupe  PSL(2, F7)  " />
+<link rel="up" href="sec-theorie_des_groupes.html" title="Théorie des groupes" />
 <link rel="stylesheet" href="styles/theme-white.css" />
 </head>
 
@@ -28,10 +28,10 @@
 <div class="wrapper">
 <nav class="toc">
 <ul class="sub-toc-0">
-<li class=" active">
+<li class="">
   <a href="sec-guide_de_lecture.html"><span class="toc_ref"></span> <span class="toc_entry">Guide de lecture</span></a>
-  <span class="expand-toc">▼</span>
-  <ul class="sub-toc-1 active">
+  <span class="expand-toc">▶</span>
+  <ul class="sub-toc-1">
      <li class="">
   <a href="sub-semaine_1.html"><span class="toc_ref"></span> <span class="toc_entry">Semaine 1</span></a>
  </li>
@@ -41,7 +41,7 @@
 <li class="">
   <a href="sub-semaine_4.html"><span class="toc_ref"></span> <span class="toc_entry">Semaine 4</span></a>
  </li>
-<li class=" active current">
+<li class="">
   <a href="sub-bibliographie.html"><span class="toc_ref"></span> <span class="toc_entry">Bibliographie</span></a>
  </li>
 
@@ -50,14 +50,14 @@
 <li class="">
   <a href="sec-quartique.html"><span class="toc_ref"></span> <span class="toc_entry">La quartique de Klein</span></a>
  </li>
-<li class="">
+<li class=" active">
   <a href="sec-theorie_des_groupes.html"><span class="toc_ref"></span> <span class="toc_entry">Théorie des groupes</span></a>
-  <span class="expand-toc">▶</span>
-  <ul class="sub-toc-1">
+  <span class="expand-toc">▼</span>
+  <ul class="sub-toc-1 active">
      <li class="">
   <a href="sub-psl2f7.html"><span class="toc_ref"></span> <span class="toc_entry">Le groupe \( \mathrm{PSL}(2, F_7) \) </span></a>
  </li>
-<li class="">
+<li class=" active current">
   <a href="sub-homographies.html"><span class="toc_ref"></span> <span class="toc_entry">Le groupe des homographies \(\mathrm{PGL}(3, \mathbb {C})\)</span></a>
  </li>
 
@@ -81,22 +81,29 @@
 
 
 <div class="main-text">
-<h2 id="sub:bibliographie"> Bibliographie</h2>
+<h2 id="sub:homographies"> Le groupe des homographies \(\mathrm{PGL}(3, \mathbb {C})\)</h2>
 
-<ul class="itemize">
-  <li><p><a href ="../../ref_lecture/perrin_klein.pdf">La quartique de Klein et le groupe simple d’ordre 168</a>, Daniel Perrin. </p>
+<p>Le groupe des homographies, ou bien le groupe des transformations projectives, du plan \( P^{2} (\mathbb {C}) \) est le groupe quotient \( \mathrm{PGL}(3, \mathbb {C}) = \mathrm{GL}(3, \mathbb {C}) / \left\{  \pm 1 \right\}  \). On étudie ici quelques propriétés et sous-groupe intéressants de ce groupe. On définit les points du plan projectif \( a = [1, 0, 0] \), \( b = [0, 1, 0] \), et \( c = [0, 0, 1] \) </p>
+<ol class="enumerate">
+  <li><p>Expliciter le stabilisateur du point \( a \) dans \( \mathrm{PGL}(3, \mathbb {C}) \). </p>
 </li>
-  <li><p><a href ="../../ref_lecture/le.pdf">La Quartique de Klein</a>, François Lê. Un rapport de mémoire inspiré du texte de Perrin, peuvent se lire de manière complémentaire. </p>
+  <li><p>En déduire le sous-groupe de \( \mathrm{PGL}(3, \mathbb {C}) \) qui fixe \(a \), \( b \) et \( c \). </p>
 </li>
-  <li><p><a href ="../../ref_lecture/fischer.pdf">Plane Algebraic Curves</a>, Gerd Fischer. Très bonne référence pour les courbes planes et le plan projectif. </p>
+</ol>
+<p>On note maintenant \( K \) la quartique de Klein d’équation </p>
+<div class="equation" id="eq:klein">
+<p>
+  <div class="equation_content">
+    \begin{equation}  \label{eq:klein} x^3 y + y^3 z + z^3 x = 0 . \end{equation}
+  </div>
+  <span class="equation_label"></span>
+</p>
+</div>
+<p> On note \( G \) le sous-groupe de \( \mathrm{PGL}(3, \mathbb {C}) \) qui fixe \( K \). </p>
+<ol class="enumerate">
+  <li><p>Trouver le stabilisateur de \( a \) dans \( G \). </p>
 </li>
-  <li><p><a href ="../../ref_lecture/perrin_alg.pdf">Cours d’algèbre</a>, Daniel Perrin. Les chapitres I (groupes finis) et IV (groupes linéaires). </p>
-</li>
-  <li><p><a href ="../../ref_lecture/levy.pdf">The Eightfold way: the beauty of Klein’s quartic curve</a>, édité par Silvio Levy. </p>
-</li>
-  <li><p><a href ="../../ref_lecture/bavard.pdf">La surface de Klein</a>, Christophe Bavard. La première partie présente très (trop) rapidement la surface de Klein et son groupe d’automorphisme. Dur d’y apprendre quelque chose, mais peut servir comme un résumé synthétique. </p>
-</li>
-</ul>
+</ol>
 
 </div> <!--main-text -->
 </div> <!-- content-wrapper -->
@@ -104,11 +111,11 @@
 </div> <!-- wrapper -->
 
 <nav class="prev_up_next">
-  <a href="sub-semaine_4.html" title="Semaine 4"><svg  class="icon icon-arrow-left "><use xlink:href="symbol-defs.svg#icon-arrow-left"></use></svg>
+  <a href="sub-psl2f7.html" title="Le groupe \( \mathrm{PSL}(2, F_7) \)"><svg  class="icon icon-arrow-left "><use xlink:href="symbol-defs.svg#icon-arrow-left"></use></svg>
 </a>
-  <a href="sec-guide_de_lecture.html" title="Guide de lecture"><svg  class="icon icon-arrow-up "><use xlink:href="symbol-defs.svg#icon-arrow-up"></use></svg>
+  <a href="sec-theorie_des_groupes.html" title="Théorie des groupes"><svg  class="icon icon-arrow-up "><use xlink:href="symbol-defs.svg#icon-arrow-up"></use></svg>
 </a>
-  <a href="sec-quartique.html" title="La quartique de Klein"><svg  class="icon icon-arrow-right "><use xlink:href="symbol-defs.svg#icon-arrow-right"></use></svg>
+  <a href="sec-courbes_planes.html" title="Courbes planes"><svg  class="icon icon-arrow-right "><use xlink:href="symbol-defs.svg#icon-arrow-right"></use></svg>
 </a>
 </nav>
 

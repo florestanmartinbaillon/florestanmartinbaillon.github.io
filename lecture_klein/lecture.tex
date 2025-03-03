@@ -1,5 +1,6 @@
-\documentclass{article}
-\usepackage{mypackage}
+documentclass{article}
+% \usepackage{mypackage}
+\usepackage{hyperref}
 \begin{document}
 
 % Macro
@@ -8,7 +9,85 @@
 \newcommand\N{\mathbb{N}}
 \newcommand\D{\mathbb{D}}
 \newcommand\Z{\mathbb{Z}}
+\newcommand\PP{\mathbb{P}}
 
+\section{Guide de lecture}
+\label{sec:guide_de_lecture}
+
+\subsection{Semaine 1}
+\label{sub:semaine_1}
+
+Je vous propose de lire la partie 2 du texte de Perrin
+et conjointement la partie 1 du texte de Lê.
+Pour les notions nécessaires de géométrie algébrique
+des courbes planes, je vous renvois 
+au 2 premiers chapitres du livre de Fischer.
+Il n'est bien sûr pas nécessaire de tout comprendre
+(en particulier les preuves en première lecture),
+nous parlerons ensemble de ce que vous n'avez pas compris.
+
+Et sinon, pour se convaincre de la richesse de cet objet,
+je me dois de mentionner le livre édité par Silvio Levy,
+dont chaque chapitre présente un aspect différent de la quartique
+de Klein.
+Les maths sont bien sûr beaucoup trop dur pour vous, mais peut-être
+que les introductions des chapitres vous donneront envie d'en savoir plus un
+jour !
+Il contient aussi une traduction de l'article original de Klein qui "découvre"
+sa quartique.
+
+(cf Bibliographie \ref{sub:bibliographie}).
+
+\subsection{Semaine 2}
+\label{sub:semaine_2}
+
+Comprendre la proposition 1 du texte de Lê, c'est-à-dire:
+comprendre les notions utilisées dans son énoncé et sa preuve
+(point d'inflexion, multiplicité d'intersection entre une courbe et une droite,
+triangle d'inflexion),
+comprendre l'énoncé,
+(essayer de) comprendre la preuve.
+Consulter le libre de Fischer pour les notions de courbes.
+
+En complément, vous pouvez méditer sur le théorème de Bezout,
+la notion de courbe Hessienne, et le nombre de points d'inflexions
+sur une quadrique.
+
+\subsection{Semaine 4}
+\label{sub:semaine_4}
+
+Comprendre la Proposition 3, le  Corollaire 4 et le Théorème 5 du texte de Lê.
+
+
+
+\subsection{Bibliographie}
+\label{sub:bibliographie}
+
+\begin{itemize}
+	\item \href{../../ref_lecture/perrin_klein.pdf}{La quartique de Klein
+		et le groupe simple d’ordre 168},
+		Daniel Perrin.
+	\item \href{../../ref_lecture/le.pdf}{La Quartique de Klein},
+		François Lê.
+		Un rapport de mémoire inspiré du texte de Perrin,
+		peuvent se lire de manière complémentaire.
+	\item \href{../../ref_lecture/fischer.pdf}{Plane Algebraic Curves},
+		Gerd Fischer.
+		Très bonne référence pour les courbes planes
+		et le plan projectif.
+	\item \href{../../ref_lecture/perrin_alg.pdf}{Cours d'algèbre},
+		Daniel Perrin.
+		Les chapitres I (groupes finis) et IV (groupes linéaires).
+	\item \href{../../ref_lecture/levy.pdf}
+		{The Eightfold way: the beauty of Klein's quartic curve},
+		édité par Silvio Levy.
+	\item \href{../../ref_lecture/bavard.pdf}{La surface de Klein},
+		Christophe Bavard.
+		La première partie présente très (trop) rapidement la surface de
+		Klein et son groupe d'automorphisme.
+		Dur d'y apprendre quelque chose, mais peut servir
+		comme un résumé synthétique.
+\end{itemize}
 \section{La quartique de Klein}
 \label{sec:quartique}
 
@@ -16,6 +95,7 @@ La quartique de Klein est la
 \emph{courbe projective plane}
 d'équation homogène:
 \begin{equation}
+	\label{eq:klein}
 	x^3 y
 	+
 	y^3 z
@@ -24,5 +104,255 @@ d'équation homogène:
 	= 0
 	.
 \end{equation}
+% On peut montrer que c'est une courbe
+% \emph{lisse}.
+
+La première étape est donc de comprendre ce qu'est une courbe projective plane.
+Pour cela, il faut définir le \emph{plan projectif}
+$ \PP^2(\C) $ 
+(et plus généralement
+la notion d'espace projectif).
+
+Ensuite, il faut comprendre pourquoi une expression
+du type \ref{eq:klein} définit une courbe.
+Une telle expression s'appelle un \emph{équation polynomiale homogène}.
+
+Comme nous le verrons, la quartique de Klein est intéressante parce
+qu'elle est la plus symétrique possible, en un sens à préciser.
+Pour comprendre cela, il faut introduire le groupe
+$ \mathrm{PGL}(3,\C) $
+des \emph{transformations projectives}
+du plan.
+Ensuite, il faudra étudier le sous-groupe
+de ces transformations projectives qui préservent
+la quartique de Klein.
+
+Ce groupe est remarquable car c'est l'unique groupe
+simple (non-abélien) d'ordre 168, et c'est le 2eme plus petit groupe
+simple (non-abélien) après le groupe alterné $ A_{5} $ d'ordre 60.
+De plus, c'est l'ordre maximale d'un groupe qui préserve une quartique.
+Réciproquement, une quartique qui a un groupe de symétrie d'ordre 168
+et forcément la quartique de Klein.
+
+\section{Théorie des groupes}
+\label{sec:theorie_des_groupes}
+
+Exercices:
+
+Bestiaire de groupes finis:
+\begin{enumerate}
+	\item Il existe un unique groupe simple d'ordre 60.
+	\item Il existe un unique groupe simple d'ordre 168
+		(dur, voir le Cours d'algèbre de Perrin page 115).
+	\item Ce sont les seules groupes simples non-abélien d'ordre
+		$ \le 168 $.
+
+\end{enumerate}
+
+Groupes linéaires:
+\begin{enumerate}
+	\item Calculer le cardinal de $ \mathrm{(P)SL}(n, K) $
+		où $ K $ est un corps fini.
+	\item $ \mathrm{PSL}(2, K) $ est simple si $ K $ a au moins 4 (?)
+		élements \textbf{(dur)}.
+\end{enumerate}
+
+Groupes de symétries:
+\begin{enumerate}
+	\item Décrire le groupe des isométries du plan euclidien.
+	\item Trouver le groupe d'isométries du plan qui
+		préservent un polygone régulier à
+		$ n $-côtés.
+	\item Trouver le groupe d'isométries du plan qui
+		préservent l'ensemble
+		$ \Z \times \left\{ 0 \right\} \subset \R^2 $.
+	\item Décrire le groupe des isométries de la sphère
+		$ \mathbb{S}^{2} =
+		\left\{
+			x^{2}
+			+
+			y^{2}
+			+
+			z^{2}
+			=1
+		\right\}
+		\subset \R^{3} 
+		$.
+	\item Déterminer les groupes d'isométries
+		des solides de Platon.
+	\item Déterminer les sous-groupes finis
+		des isométries de
+		$ \mathbb{S}^{2} $
+		\textbf{(dur)}.
+\end{enumerate}
+
+\subsection{Le groupe $ \mathrm{PSL}(2, F_7) $ }
+\label{sub:psl2f7}
+
+Un dévissage de $ G =  \mathrm{PSL}(2, F_7) $.
+Pour comprendre ce groupe, on détermine tout ses
+sous-groupes et l'action de $ G $ sur ces sous-groupes.
+Pour cela, on commence par l'étude de ses $ p $-Syllow,
+pour $ p=2,3,7 $.
+
+\begin{enumerate}
+	\item Montrer que le cardinal de $ G $
+		est $ 168 = 2^3 \cdot 3 \cdot 7 $.
+	\item Montrer que $ G $ agit transitivement sur la droite projective
+		$ \PP^{1}(F_{7}) $,
+		c'est à dire l'ensemble des droites
+		de $ F_{7}^{2} $.
+	\item Montrer que $ G $ agit transitivement sur les
+		paires de points distincts de
+		$ \PP^{1}(F_{7}) $.
+\end{enumerate}
+
+On considère les sous-groupes de $ G $ suivant:
+\begin{itemize}
+	\item Le groupe $ P $ des matrices triangulaires supérieur.
+	\item Le groupe $ A \subset P $ des matrices diagonales.
+	\item Le groupe $ U \subset P $ des matrices triangulaires supérieur
+		avec des $ 1 $ sur la diagonale.
+\end{itemize}
+
+\begin{enumerate}
+	\item Calculer les ordres des sous-groupes
+		$P, A $ et $ U $ (attention, on est dans
+		$ \mathrm{PSL} $ et pas $ \mathrm{SL} $!).
+	\item Montrer que $ P $ est le stabilisateur
+		d'un point de
+		$ \PP^{1}(F_{7}) $
+		(c'est à dire d'une droite de $ F_{7}^{2} $.
+	\item Montrer que $ A $ est le stabilisateur
+		d'une paire de points distincts de
+		$ \PP^{1}(F_{7}) $.
+	\item Montrer que $ P $ est le normalisateur
+		de $ U $.
+	\item Calculer le normalisateur de $ A $.
+	\item En déduire le nombre de $ 3 $-Syllow et de $ 7 $-Syllow.
+\end{enumerate}
+
+Formes quadratiques sur $ F_{7} $.
+On définit $ q(x,y) = x^2+y^2 $,
+qui est une forme quadratique
+sur $ F_{7}^2 $.
+Remarquer que
+$ \mathrm{SL}(2, F_{7}) $
+agit sur l'ensemble des formes quadratiques
+sur $ F_{7}^2 $
+par précomposition:
+$ (M, q) \mapsto q \circ M^{-1} $.
+\begin{enumerate}
+	\item Déterminer le sous-groupe
+		de $ \mathrm{SL}(2, F_{7}) $
+		des matrices
+		qui préservent $ q $.
+	\item Déterminer le sous-groupe
+		de $ \mathrm{SL}(2, F_{7}) $
+		des matrices
+		qui préservent
+		$ \left\{ q, -q \right\} $.
+\end{enumerate}
+
+Nombres complexes sur
+$ F_{7} $.
+
+\begin{enumerate}
+	\item Montrer que $ -1 $ n'est pas un carré
+		dans $ F_{7} $.
+	\item Montrer qu'il existe un plus petit corps
+		qui contient $ F_{7} $ et dans le lequel
+		$ -1 $ est un carré. Montrer que ce corps
+		est de cardinal $ 7 \cdot 7 $.
+		On l'appelera le corps de nombres complexes
+		sur $ F_{7} $.
+\end{enumerate}
+
+\subsection{Le groupe des homographies $\mathrm{PGL}(3, \C)$}
+\label{sub:homographies}
+
+Le groupe des homographies, ou bien le groupe des transformations projectives,
+du plan $ P^{2} (\C) $
+est le groupe
+quotient
+$ \mathrm{PGL}(3, \C)
+=
+\mathrm{GL}(3, \C)
+/
+\left\{ \pm 1 \right\}
+$.
+On étudie ici quelques propriétés et sous-groupe intéressants de ce groupe.
+On définit les points du plan projectif
+$ a = [1, 0, 0] $,
+$ b = [0, 1, 0] $,
+et
+$ c = [0, 0, 1] $
+
+\begin{enumerate}
+	\item Expliciter le stabilisateur du point
+		$ a $
+		dans
+		$ \mathrm{PGL}(3, \C) $.
+	\item En déduire le sous-groupe de
+		$ \mathrm{PGL}(3, \C) $
+		qui fixe $a $, $ b $ et $ c $.
+	% \item Trouver le sous-groupe de
+	% 	$ \mathrm{PGL}(3, \C) $
+	% 	qui fixe $ a $ et qui laisse stable
+	% 	l'ensemble $ \left\{ b,c \right\} $.
+\end{enumerate}
+
+On note maintenant $ K $
+la quartique de Klein d'équation
+\begin{equation}
+	\label{eq:klein}
+	x^3 y
+	+
+	y^3 z
+	+
+	z^3 x
+	= 0
+	.
+\end{equation}
+On note $ G $
+le sous-groupe de
+$ \mathrm{PGL}(3, \C) $
+qui fixe $ K $.
+
+\begin{enumerate}
+	\item Trouver le stabilisateur de $ a $ dans $ G $.
+\end{enumerate}
+
+
+\section{Courbes planes}
+\label{sec:courbes_planes}
+
+\subsection{Coniques}
+\label{sub:coniques}
+
+Une \emph{conique} est une courbe projective plane
+définie par un polynome homogène de degré 2.
+
+Montrer qu'à transformation projective près, il n'existe que
+3 coniques distinctes: 
+\begin{itemize}
+	\item La double droite $ x^2 = 0 $
+	\item La paire de droite $ xy = 0 $
+	\item Le cercle $ x^2+y^2+z^2=0 $
+		(ce cas est dit \emph{non-dégénéré}).
+\end{itemize}
+On pourra utiliser la classification des formes quadratiques sur
+$ \C $.
+Comparer avec la situation réelle.
+
+Montrer qu'une conique non-dégénéré est \emph{rationnelle},
+c'est à dire qu'il existe une bijection
+de $ \PP^1 (\C) $ vers cette conique.
+\emph{Indication}: dans une carte affine où la conique est d'équation
+$ x^2+y^2=1 $, regarder les droites qui passent par $ (0,1) $.
+Chacune de ces droites recoupe la conique en un unique autre point 
+(à part la droite verticale).
+
+Déterminer le groupe des symétries d'une conique non-dégénéré.
 
 \end{document}
