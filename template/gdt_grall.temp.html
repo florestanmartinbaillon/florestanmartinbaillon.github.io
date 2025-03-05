@@ -1,0 +1,55 @@
+
+<!doctype html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<script>
+			MathJax = {
+							tex: {
+											inlineMath: [['$', '$'], ['\\(', '\\)']]
+										}
+						};
+		</script>
+		<script id="MathJax-script" async
+			src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+		</script>
+
+		<title>{{ titre }}</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div id="content">
+			<h1>{{ titre }}</h1>
+			<p>
+			<i>
+			Organisateurs:
+			Florestan Martin-Baillon,
+			Milan Arrouas.
+			</i>
+			</p>
+			<p>
+			{{ presentation }}
+			<ul>
+				{% for s in seances %}
+				<li>
+					<span>
+						{{ s.date }}:
+					</span>
+					{{ s.titre }}
+				</li>
+				{% endfor %}
+			</ul>
+			</p>
+			<p>
+			Dans ce groupe de travail, nous étudierons les définitions de bases
+			pour l'études des groupes et algèbres de Lie, 
+			avec pour premier objectif de comprendre la classification
+			des algèbres de Lie semi-simple sur $\mathbb{C}$.
+			Voir <a href="https://plmlatex.math.cnrs.fr/read/dbyykxwcbdpf">ce document</a>.
+			</p>
+			<br />
+			<a href="index_fr.html">Page d'accueil</a>
+		</div>
+	</body>
+</html>
