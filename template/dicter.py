@@ -7,6 +7,13 @@ key2:value2
 
 séparé par des 
 ---
+Exemple:
+
+    titre:Ma page web
+    contentu:Hello World
+    ---
+    titre:Le reste du site
+    contenu: ça continu
 
 """
 

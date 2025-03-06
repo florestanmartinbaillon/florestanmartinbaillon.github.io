@@ -1,0 +1,35 @@
+{
+meta_content: Page de Florestan Martin-Baillon
+presentation:
+'''
+<p>
+Depuis septembre 2022 je suis un postdoc à l'IRMAR à Rennes,
+où je travaille avec Serge Cantat et Christophe Dupont.
+</p>
+<p>
+Avant cela, j'ai fait une thèse
+encadré par Bertrand Deroin au laboratoire AGM de l'Université
+de Cergy-Pontoise.
+</p>
+<p>
+Je m'intéresse aux aspects géométriques et dynamiques
+des groupes.
+En particulier,
+je m'intéresse
+aux déformations
+des sous-groupes des groupes linéaires
+en utilisant des techniques de dynamique complexe.
+</p>
+<p>
+On peut m'écrire à
+florestan.martinbaillon (at) gmail.com
+</p>
+'''
+h2_recherche:Recherche
+h2_groupes:Groupes de travail
+h2_enseignement:Enseignement
+version:{
+	lien: index_en.html
+	titre: English version
+}
+}
