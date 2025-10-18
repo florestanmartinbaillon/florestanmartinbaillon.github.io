@@ -3,13 +3,13 @@ meta_content: Page de Florestan Martin-Baillon
 presentation:
 '''
 <p>
-Depuis septembre 2022 je suis un postdoc à l'IRMAR à Rennes,
-où je travaille avec Serge Cantat et Christophe Dupont.
+Depuis septembre 2025, je suis postdoc au MPI-MiS à Leipzig,dans le groupe d'Anna Wienhard.
 </p>
 <p>
-Avant cela, j'ai fait une thèse
-encadré par Bertrand Deroin au laboratoire AGM de l'Université
-de Cergy-Pontoise.
+Avant cela, j'étais en thèse
+avec Bertrand Deroin,
+puis postdoc à l'IRMAR à Rennes,
+où je travaillais avec Serge Cantat et Christophe Dupont.
 </p>
 <p>
 Je m'intéresse aux aspects géométriques et dynamiques
@@ -29,7 +29,7 @@ h2_recherche:Recherche
 h2_groupes:Groupes de travail
 h2_enseignement:Enseignement
 version:{
-	lien: index_en.html
+	lien: index.html
 	titre: English version
 }
 }

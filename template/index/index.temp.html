@@ -11,36 +11,33 @@
 	<body>
 		<div id="content">
 			<h1>Florestan Martin-Baillon</h1>
-			{{ presentation }}
-			<h2>{{ h2_recherche }}</h2>
-			{% for article in articles %}
-			<p>
-			<i>{{ article.titre }}</i>
-			{{article.avec }}
-			<br/>
-			{{ article.liens }}
-			</p>
-			{% endfor %}
-			<h2>{{ h2_groupes }}</h2>
-			{% for groupe in groupes %}
-			<p>
-			<a href="{{ groupe.lien }}">{{ groupe.titre }}</a>
-			{{ groupe.lieu_date }}
-			</p>
-			{% endfor %}
-			<h2>{{ h2_enseignement }}</h2>
-			{% for ens in enseignements %}
-			<p>
-			<a href="{{ ens.lien }}">{{ ens.titre }}</a>
-			{{ ens.lieu_date }}
-			</p>
-			{% endfor %}
-			<p>
-			<a href="</a>
-			(Rennes, 2023)
-			</p>
-
-			<a href="{{version.lien}}">{{ version.titre }}</a>
+				{{ presentation }}
+				<h2>{{ h2_recherche }}</h2>
+					{% for article in articles %}
+						<p>
+						<i>{{ article.titre }}</i>
+						{{article.avec }}
+						<br/>
+						{{ article.liens }}
+						</p>
+					{% endfor %}
+				<h2>{{ h2_groupes }}</h2>
+					{% for groupe in groupes %}
+						<p>
+						<a href="{{ groupe.lien }}">{{ groupe.titre }}</a>
+						{{ groupe.lieu_date }}
+						</p>
+					{% endfor %}
+				<h2>{{ h2_enseignement }}</h2>
+					{% for ens in enseignements %}
+						<p>
+						<a href="{{ ens.lien }}">{{ ens.titre }}</a>
+						{{ ens.lieu_date }}
+						</p>
+					{% endfor %}
+				<p>
+					<a href="{{version.lien}}">{{ version.titre }}</a>
+				</p>
 		</div>
 	</body>
 </html>
