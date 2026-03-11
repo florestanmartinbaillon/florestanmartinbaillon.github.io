@@ -3,10 +3,6 @@ phi = Decimal(1).plus(Decimal(5).sqrt()).div(Decimal(2))
 
 un = Decimal(1)
 
-// k = Decimal(123)
-// N = Decimal(100)
-// eps = Decimal(0.1)
-
 function norm(x) {
 	n = x.floor()
 	f = x.minus(n)
@@ -29,7 +25,6 @@ function condition(k, N, eps) {
 
 function getValues() {
 	// Get values from input boxes
-	// let k = document.getElementById("k").value;
 	let Nmin = document.getElementById("Nmin").value;
 	let Nmax = document.getElementById("Nmax").value;
 	let eps = document.getElementById("eps").value;
@@ -38,24 +33,19 @@ function getValues() {
 
 	Decimal.precision = Number(prec)
 
-	// k = Decimal(k)
-	// N = Decimal(N)
 	Nmin = Number(Nmin)
 	Nmax = Number(Nmax)
 	eps = Decimal(eps)
 	
-	// cond = condition(k, N, eps)
-
 	document.getElementById("result").innerHTML = '';
 
 	for (let n=Nmin; n <= Nmax; n++){
 		console.log(n)
-		k = 1
+		k = 2*n
 		while (!condition(Decimal(k), Decimal(n), eps)) {
 			k = k + 1
 		}
 		document.getElementById("result").innerHTML +=
-			// `Condition: ${cond} <br/>`;
 			`Pour N=${n}, eps=${eps}, premier k=${k} <br />`;
 	}
 }
